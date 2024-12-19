@@ -1,5 +1,6 @@
 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
 }
 
 .card-body {
@@ -8,6 +9,7 @@
 
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 .btn-primary {
@@ -18,6 +20,39 @@
 #sales-over-time, #sales-by-category {
     width: 100%;
     height: 400px;
+    position: relative;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Summary cards */
+.summary-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-card h5 {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.summary-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
 }
 
 /* Responsive adjustments */
@@ -30,7 +65,15 @@
         margin-bottom: 1rem;
     }
     
+    .chart-container {
+        height: 300px;
+    }
+    
     #sales-over-time, #sales-by-category {
         height: 300px;
+    }
+    
+    .summary-card {
+        margin-bottom: 1rem;
     }
 }
