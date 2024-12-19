@@ -2,7 +2,7 @@
 
 A modern, interactive data visualization dashboard built with Python Flask and Plotly. This dashboard allows users to analyze sales data through interactive charts, filters, and summary statistics.
 
-![Dashboard Preview](static/img/dashboard-preview.svg)
+![Dashboard Preview](static/img/dashboard-preview-fixed.svg)
 
 ## Features
 

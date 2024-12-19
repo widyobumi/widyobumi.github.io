@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="800" height="60" fill="#ffffff" stroke="#e9ecef"/>
+    <text x="20" y="38" font-family="Arial" font-size="24" fill="#212529">Data Analysis Dashboard</text>
+    
+    <!-- Charts Container -->
+    <g transform="translate(20,80)">
+        <!-- Line Chart -->
+        <rect x="0" y="0" width="370" height="200" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="10" y="30" font-family="Arial" font-size="16" fill="#495057">Sales Over Time</text>
+        <path d="M 30 150 Q 100 50, 170 120 T 340 80" stroke="#007bff" fill="none" stroke-width="2"/>
+        
+        <!-- Pie Chart Container -->
+        <rect x="390" y="0" width="370" height="200" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="400" y="30" font-family="Arial" font-size="16" fill="#495057">Sales by Category</text>
+        
+        <!-- Pie Chart -->
+        <g transform="translate(575,100)">
+            <circle cx="0" cy="0" r="60" fill="#f8f9fa" stroke="#dee2e6"/>
+            <path d="M 0 0 L 60 0 A 60 60 0 0 1 0 60 Z" fill="#007bff"/>
+            <path d="M 0 0 L 0 60 A 60 60 0 0 1 -60 0 Z" fill="#28a745"/>
+            <path d="M 0 0 L -60 0 A 60 60 0 0 1 0 -60 Z" fill="#ffc107"/>
+            <path d="M 0 0 L 0 -60 A 60 60 0 0 1 60 0 Z" fill="#6c757d"/>
+        </g>
+        
+        <!-- Legend -->
+        <g transform="translate(400,160)">
+            <rect x="0" y="0" width="12" height="12" fill="#007bff"/>
+            <text x="20" y="10" font-family="Arial" font-size="12" fill="#495057">Electronics</text>
+            <rect x="100" y="0" width="12" height="12" fill="#28a745"/>
+            <text x="120" y="10" font-family="Arial" font-size="12" fill="#495057">Clothing</text>
+            <rect x="200" y="0" width="12" height="12" fill="#ffc107"/>
+            <text x="220" y="10" font-family="Arial" font-size="12" fill="#495057">Books</text>
+        </g>
+    </g>
+    
+    <!-- Summary Cards -->
+    <g transform="translate(20,300)">
+        <!-- Total Sales -->
+        <rect x="0" y="0" width="250" height="80" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="20" y="30" font-family="Arial" font-size="14" fill="#6c757d">Total Sales</text>
+        <text x="20" y="60" font-family="Arial" font-size="20" fill="#212529">$1,234,567</text>
+        
+        <!-- Average Sales -->
+        <rect x="270" y="0" width="250" height="80" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="290" y="30" font-family="Arial" font-size="14" fill="#6c757d">Average Daily Sales</text>
+        <text x="290" y="60" font-family="Arial" font-size="20" fill="#212529">$12,345</text>
+        
+        <!-- Top Category -->
+        <rect x="540" y="0" width="240" height="80" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="560" y="30" font-family="Arial" font-size="14" fill="#6c757d">Top Category</text>
+        <text x="560" y="60" font-family="Arial" font-size="20" fill="#212529">Electronics</text>
+    </g>
+</svg>
