@@ -207,6 +207,28 @@ section h2 {
     color: var(--primary-color);
 }
 
+/* Tech Stack Tags */
+.tech-stack {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.tech-tag:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
 /* Contact Section */
 .contact-content {
     display: flex;

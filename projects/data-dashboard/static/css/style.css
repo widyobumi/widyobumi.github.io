@@ -1,0 +1,36 @@
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+}
+
+/* Chart containers */
+#sales-over-time, #sales-by-category {
+    width: 100%;
+    height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    #sales-over-time, #sales-by-category {
+        height: 300px;
+    }
+}
