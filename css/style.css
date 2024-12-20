@@ -246,7 +246,7 @@ section h2 {
 /* Blog Post Page Styles */
 .blog-post {
     max-width: 800px;
-    margin: 100px auto 2rem;
+    margin: 120px auto 2rem;  
     padding: 0 2rem;
 }
 
@@ -292,6 +292,19 @@ section h2 {
 
 .post-content li {
     margin-bottom: 0.5rem;
+}
+
+/* Navbar styles for blog posts */
+.blog-post .navbar {
+    background: var(--background);
+}
+
+.blog-post .nav-links a {
+    color: var(--text-color);
+}
+
+.blog-post .nav-links a:hover {
+    color: var(--primary-color);
 }
 
 /* Tech Stack Tags */
@@ -409,14 +422,15 @@ footer {
     }
 
     .blog-post {
-        margin-top: 80px;
+        margin-top: 100px;
+        padding: 0 1rem;
     }
-    
+
+    .blog-content {
+        padding: 1.5rem;
+    }
+
     .blog-content h1 {
-        font-size: 2rem;
-    }
-    
-    .post-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
