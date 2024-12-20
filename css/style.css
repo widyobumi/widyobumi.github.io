@@ -245,15 +245,15 @@ section h2 {
 
 /* Blog Post Page Styles */
 .blog-post {
-    padding-top: 60px; /* Height of the navbar */
+    padding-top: 120px; /* Increased padding for more space */
     max-width: 800px;
-    margin: 120px auto 2rem;  
+    margin: 0 auto 2rem;  
     padding: 0 2rem;
 }
 
 .blog-content {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 2rem;
     background: var(--background);
     border-radius: 10px;
@@ -261,8 +261,8 @@ section h2 {
 }
 
 .blog-content h1 {
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
     font-size: 2.5rem;
 }
 
@@ -298,22 +298,89 @@ section h2 {
 }
 
 /* Navbar styles for blog posts */
-.blog-post .navbar {
-    background: var(--background);
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    background: var(--background);
+    padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
-.blog-post .nav-links a {
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
     color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
-.blog-post .nav-links a:hover {
+.nav-links li a:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        padding-top: 100px; /* Adjusted for mobile */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .blog-content {
+        padding: 1.5rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        background: var(--background);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        transition: left 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        transition: transform 0.3s ease;
+    }
+
+    .menu-btn.active {
+        transform: rotate(90deg);
+    }
 }
 
 /* Tech Stack Tags */
