@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="800" height="60" fill="#343a40"/>
+    <text x="20" y="38" font-family="Arial" font-size="24" fill="#ffffff">AI Image Classifier</text>
+    
+    <!-- Main Content -->
+    <g transform="translate(20,80)">
+        <!-- Upload Section -->
+        <rect x="0" y="0" width="370" height="300" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#495057">Upload Image</text>
+        
+        <!-- Upload Area -->
+        <rect x="20" y="50" width="330" height="180" fill="#ffffff" stroke="#dee2e6" stroke-dasharray="5,5"/>
+        <text x="135" y="130" font-family="Arial" font-size="14" fill="#6c757d">Drag &amp; Drop</text>
+        <text x="145" y="150" font-family="Arial" font-size="14" fill="#6c757d">or Click</text>
+        
+        <!-- Buttons -->
+        <rect x="20" y="250" width="150" height="35" fill="#007bff" rx="4"/>
+        <text x="55" y="273" font-family="Arial" font-size="14" fill="#ffffff">Upload Image</text>
+        
+        <rect x="180" y="250" width="170" height="35" fill="#6c757d" rx="4"/>
+        <text x="205" y="273" font-family="Arial" font-size="14" fill="#ffffff">Try Sample Image</text>
+        
+        <!-- Results Section -->
+        <rect x="390" y="0" width="370" height="300" fill="#ffffff" stroke="#dee2e6"/>
+        <text x="410" y="30" font-family="Arial" font-size="16" fill="#495057">Results</text>
+        
+        <!-- Sample Results -->
+        <rect x="410" y="50" width="330" height="100" fill="#f8f9fa" rx="4"/>
+        <text x="430" y="80" font-family="Arial" font-size="14" fill="#212529">Golden Retriever</text>
+        <rect x="430" y="90" width="290" height="6" fill="#e9ecef" rx="3"/>
+        <rect x="430" y="90" width="261" height="6" fill="#007bff" rx="3"/>
+        <text x="730" y="80" font-family="Arial" font-size="14" fill="#495057">90%</text>
+        
+        <rect x="410" y="160" width="330" height="100" fill="#f8f9fa" rx="4"/>
+        <text x="430" y="190" font-family="Arial" font-size="14" fill="#212529">Labrador</text>
+        <rect x="430" y="200" width="290" height="6" fill="#e9ecef" rx="3"/>
+        <rect x="430" y="200" width="203" height="6" fill="#007bff" rx="3"/>
+        <text x="730" y="190" font-family="Arial" font-size="14" fill="#495057">70%</text>
+    </g>
+</svg>
